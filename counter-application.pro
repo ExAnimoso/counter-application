@@ -49,3 +49,4 @@ DISTFILES += \
 tests.files = tests/*
 tests.path = /usr/share/counter-application/tests
 INSTALLS += tests
+OTHER_FILES += tests/*
