@@ -10,19 +10,19 @@
 #   - translation filenames have to be changed
 
 # The name of your application
-TARGET = counter_application
+TARGET = counter-application
 
 CONFIG += sailfishapp
 
-SOURCES += src/counter_application.cpp
+SOURCES += src/counter-application.cpp
 
-OTHER_FILES += qml/counter_application.qml \
+OTHER_FILES += qml/counter-application.qml \
     qml/cover/CoverPage.qml \
-    rpm/counter_application.changes.in \
-    rpm/counter_application.spec \
-    rpm/counter_application.yaml \
+    rpm/counter-application.changes.in \
+    rpm/counter-application.spec \
+    rpm/counter-application.yaml \
     translations/*.ts \
-    counter_application.desktop
+    counter-application.desktop
 
 SAILFISHAPP_ICONS = 86x86 108x108 128x128 256x256
 
@@ -34,18 +34,18 @@ CONFIG += sailfishapp_i18n
 # planning to localize your app, remember to comment out the
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
-TRANSLATIONS += translations/counter_application-de.ts
+TRANSLATIONS += translations/counter-application-de.ts
 
 DISTFILES += \
     tests/tst_counter.qml \
-    icons/108x108/counter_application.png \
-    icons/128x128/counter_application.png \
-    icons/256x256/counter_application.png \
-    icons/86x86/counter_application.png \
+    icons/108x108/counter-application.png \
+    icons/128x128/counter-application.png \
+    icons/256x256/counter-application.png \
+    icons/86x86/counter-application.png \
     tests/SailfishTestCase.qml \
     qml/CounterApplication.qml \
     qml/pages/CounterPage.qml
 
 tests.files = tests/*
-tests.path = /usr/share/counter_application/tests
+tests.path = /usr/share/counter-application/tests
 INSTALLS += tests
